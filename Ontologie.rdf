@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/"
-     xml:base="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/"
+<rdf:RDF xmlns="https://w3id.org/bimprev#"
+     xml:base="https://w3id.org/bimprev#"
      xmlns:ifc="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21"/>
+    <owl:Ontology rdf:about="https://w3id.org/bimprev#"/>
     
 
 
@@ -34,7 +34,7 @@
     <!-- http://www.co-ode.org/ontologies/ont.owl#accomplish -->
 
     <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#accomplish">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isAccomplishedBy"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isAccomplishedBy"/>
         <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
     </owl:ObjectProperty>
@@ -86,112 +86,112 @@
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IsHorizontalHoleOf -->
+    <!-- https://w3id.org/bimprev#IsHorizontalHoleOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IsHorizontalHoleOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHorizontalHole"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#IsHorizontalHoleOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bimprev#isHoleOf"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#hasHorizontalHole"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IsVerticalHoleOf -->
+    <!-- https://w3id.org/bimprev#IsVerticalHoleOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IsVerticalHoleOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#IsVerticalHoleOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bimprev#isHoleOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/RelatedElements -->
+    <!-- https://w3id.org/bimprev#RelatedElements -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/RelatedElements">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#RelatedElements">
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRoof"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/RelatingStructure -->
+    <!-- https://w3id.org/bimprev#RelatingStructure -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/RelatingStructure">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#RelatingStructure">
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRoof"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole -->
+    <!-- https://w3id.org/bimprev#hasHole -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasHole">
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHorizontalHole -->
+    <!-- https://w3id.org/bimprev#hasHorizontalHole -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHorizontalHole">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasHorizontalHole">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bimprev#hasHole"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+        <rdfs:range rdf:resource="https://w3id.org/bimprev#Hopper"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasType -->
+    <!-- https://w3id.org/bimprev#hasType -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasType">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasType">
+        <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasVerticalHole -->
+    <!-- https://w3id.org/bimprev#hasVerticalHole -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasVerticalHole">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasVerticalHole">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bimprev#hasHole"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+        <rdfs:range rdf:resource="https://w3id.org/bimprev#Hopper"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isAccomplishedBy -->
+    <!-- https://w3id.org/bimprev#isAccomplishedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isAccomplishedBy">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isAccomplishedBy">
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isEquipedBy -->
+    <!-- https://w3id.org/bimprev#isEquipedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isEquipedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isEquipedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf -->
+    <!-- https://w3id.org/bimprev#isHoleOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isHoleOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isHoleOf"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/requires -->
+    <!-- https://w3id.org/bimprev#requires -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/requires">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#requires">
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
     </owl:ObjectProperty>
@@ -209,17 +209,17 @@
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasDiameter -->
+    <!-- https://w3id.org/bimprev#hasDiameter -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasDiameter">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bimprev#hasDiameter">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHeight -->
+    <!-- https://w3id.org/bimprev#hasHeight -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHeight">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bimprev#hasHeight">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
@@ -227,9 +227,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasLength -->
+    <!-- https://w3id.org/bimprev#hasLength -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasLength">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bimprev#hasLength">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
@@ -237,18 +237,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement -->
+    <!-- https://w3id.org/bimprev#hasSpacement -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bimprev#hasSpacement">
+        <rdfs:domain rdf:resource="https://w3id.org/bimprev#Barring"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasWidth -->
+    <!-- https://w3id.org/bimprev#hasWidth -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasWidth">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bimprev#hasWidth">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
@@ -270,7 +270,7 @@
     <!-- http://www.co-ode.org/ontologies/ont.owl#IfcProcess -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IfcProcess">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcObject"/>
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject"/>
     </owl:Class>
     
 
@@ -281,36 +281,36 @@
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcActor -->
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcActor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcObject"/>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcObject -->
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcObject"/>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject"/>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring -->
+    <!-- https://w3id.org/bimprev#Barring -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/ProtectiveEquipement"/>
+    <owl:Class rdf:about="https://w3id.org/bimprev#Barring">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#ProtectiveEquipement"/>
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringCircularOpening -->
+    <!-- https://w3id.org/bimprev#BarringCircularOpening -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringCircularOpening">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+    <owl:Class rdf:about="https://w3id.org/bimprev#BarringCircularOpening">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Barring"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/bimprev#hasSpacement"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">24</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
@@ -319,13 +319,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringSlotOpening -->
+    <!-- https://w3id.org/bimprev#BarringSlotOpening -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringSlotOpening">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+    <owl:Class rdf:about="https://w3id.org/bimprev#BarringSlotOpening">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Barring"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/bimprev#hasSpacement"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">18</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
@@ -334,13 +334,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringSquareOpening -->
+    <!-- https://w3id.org/bimprev#BarringSquareOpening -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringSquareOpening">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+    <owl:Class rdf:about="https://w3id.org/bimprev#BarringSquareOpening">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Barring"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/bimprev#hasSpacement"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">24</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
@@ -349,33 +349,33 @@
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hatch -->
+    <!-- https://w3id.org/bimprev#Hatch -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hatch">
+    <owl:Class rdf:about="https://w3id.org/bimprev#Hatch">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hinge -->
+    <!-- https://w3id.org/bimprev#Hinge -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hinge">
+    <owl:Class rdf:about="https://w3id.org/bimprev#Hinge">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper -->
+    <!-- https://w3id.org/bimprev#Hopper -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper">
+    <owl:Class rdf:about="https://w3id.org/bimprev#Hopper">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isEquipedBy"/>
+                <owl:onProperty rdf:resource="https://w3id.org/bimprev#isEquipedBy"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+                            <rdf:Description rdf:about="https://w3id.org/bimprev#Barring"/>
                             <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing"/>
                         </owl:unionOf>
                     </owl:Class>
@@ -386,25 +386,25 @@
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquareHuman -->
+    <!-- https://w3id.org/bimprev#HopperSquareHuman -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquareHuman">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+    <owl:Class rdf:about="https://w3id.org/bimprev#HopperSquareHuman">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Hopper"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquareObject -->
+    <!-- https://w3id.org/bimprev#HopperSquareObject -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquareObject">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+    <owl:Class rdf:about="https://w3id.org/bimprev#HopperSquareObject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Hopper"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/ProtectiveEquipement -->
+    <!-- https://w3id.org/bimprev#ProtectiveEquipement -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/ProtectiveEquipement">
+    <owl:Class rdf:about="https://w3id.org/bimprev#ProtectiveEquipement">
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SafetyMeasure"/>
     </owl:Class>
     
@@ -449,11 +449,11 @@
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing -->
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/ProtectiveEquipement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#ProtectiveEquipement"/>
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHeight"/>
+                <owl:onProperty rdf:resource="https://w3id.org/bimprev#hasHeight"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">120</owl:minQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
@@ -494,4 +494,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
-
