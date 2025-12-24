@@ -478,26 +478,6 @@
     
 
 
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject"/>
-        <rdfs:label>IfcActor</rdfs:label>
-        <rdfs:comment>Represents a person, organization, or other entity that performs activities in a building project.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label>IfcObject</rdfs:label>
-        <rdfs:comment>Base IFC class for objects that can have properties, relationships, and other attributes in the IFC model.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/bimprev#Barring -->
 
     <owl:Class rdf:about="https://w3id.org/bimprev#Barring">
@@ -638,111 +618,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
         <rdfs:label>ProtectiveEquipement</rdfs:label>
         <rdfs:comment>Physical equipment or devices installed to protect workers from hazards during construction activities.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
-        <rdfs:label>IfcBuildingElement</rdfs:label>
-        <rdfs:comment>Represents components that make up the structure of a building, such as walls, slabs, columns, and beams.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcDiscreteAccessory -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcDiscreteAccessory">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
-        <rdfs:label>IfcDiscreteAccessory</rdfs:label>
-        <rdfs:comment>Represents accessory components or hardware elements that are discrete and do not belong to standard element types.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement">
-        <rdfs:label>IfcElement</rdfs:label>
-        <rdfs:comment>Base class for all physical building elements and components that form part of a building structure.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcFurniture -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcFurniture">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
-        <rdfs:label>IfcFurniture</rdfs:label>
-        <rdfs:comment>Represents movable furniture elements and fittings within a building space.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement">
-        <rdfs:label>IfcOpeningElement</rdfs:label>
-        <rdfs:comment>Represents voids or openings within building elements, such as doors, windows, or holes in slabs.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#ProtectiveEquipement"/>
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/bimprev#hasHeight"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">120</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>IfcRailing</rdfs:label>
-        <rdfs:comment>A protective barrier installed along edges of slabs, stairs, or roofs to prevent falls, with minimum height requirement of 120 units.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRoof -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRoof">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <rdfs:label>IfcRoof</rdfs:label>
-        <rdfs:comment>Represents the roof structure covering the top of a building.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <rdfs:label>IfcSlab</rdfs:label>
-        <rdfs:comment>Represents horizontal structural elements such as floors, landings, or roof slabs in a building.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
-        <rdfs:label>IfcTask</rdfs:label>
-        <rdfs:comment>Represents a discrete work task or activity within a construction or building process workflow.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk">
-        <rdfs:label>Risk</rdfs:label>
-        <rdfs:comment>Represents potential hazards or dangers associated with construction processes or building elements.</rdfs:comment>
     </owl:Class>
 </rdf:RDF>
 
