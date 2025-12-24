@@ -25,10 +25,22 @@
     <!-- https://w3id.org/bimprev#reduce -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#reduce">
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isReducedBy"/>
         <rdfs:domain rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk"/>
         <rdfs:label>reduce</rdfs:label>
         <rdfs:comment>Safety measure that reduces a specific risk.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bimprev#isReducedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isReducedBy">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk"/>
+        <rdfs:range rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
+        <rdfs:label>isReducedBy</rdfs:label>
+        <rdfs:comment>Inverse of reduce; indicates which safety measure reduces this risk.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -55,6 +67,7 @@
     <!-- https://w3id.org/bimprev#hasActivity -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasActivity">
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isActivityOf"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor"/>
         <rdfs:range rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
         <rdfs:label>hasActivity</rdfs:label>
@@ -63,9 +76,21 @@
     
 
 
+    <!-- https://w3id.org/bimprev#isActivityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isActivityOf">
+        <rdfs:domain rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor"/>
+        <rdfs:label>isActivityOf</rdfs:label>
+        <rdfs:comment>Inverse of hasActivity; indicates which actor performs this process.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/bimprev#hasTask -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasTask">
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isTaskOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
         <rdfs:label>hasTask</rdfs:label>
@@ -74,9 +99,21 @@
     
 
 
+    <!-- https://w3id.org/bimprev#isTaskOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isTaskOf">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
+        <rdfs:range rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
+        <rdfs:label>isTaskOf</rdfs:label>
+        <rdfs:comment>Inverse of hasTask; indicates which process this task belongs to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/bimprev#isLocatedIn -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isLocatedIn">
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#hosts"/>
         <rdfs:domain rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
         <rdfs:label>isLocatedIn</rdfs:label>
@@ -85,9 +122,21 @@
     
 
 
+    <!-- https://w3id.org/bimprev#hosts -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hosts">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
+        <rdfs:label>hosts</rdfs:label>
+        <rdfs:comment>Inverse of isLocatedIn; indicates which process is hosted by this building element.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/bimprev#isPresenting -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isPresenting">
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isPresentedBy"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -103,13 +152,43 @@
     
 
 
+    <!-- https://w3id.org/bimprev#isPresentedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isPresentedBy">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bimprev#IfcProcess"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>isPresentedBy</rdfs:label>
+        <rdfs:comment>Inverse of isPresenting; indicates which process or task presents this risk.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/bimprev#need -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#need">
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isNeededBy"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
         <rdfs:range rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
         <rdfs:label>need</rdfs:label>
         <rdfs:comment>Declares that a task requires a safety measure.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bimprev#isNeededBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isNeededBy">
+        <rdfs:domain rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
+        <rdfs:label>isNeededBy</rdfs:label>
+        <rdfs:comment>Inverse of need; indicates which task requires this safety measure.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -192,10 +271,22 @@
     <!-- https://w3id.org/bimprev#hasType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasType">
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isTypeOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
         <rdfs:label>hasType</rdfs:label>
         <rdfs:comment>Assigns an IFC opening element type to a hopper.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bimprev#isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isTypeOf">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/bimprev#Hopper"/>
+        <rdfs:label>isTypeOf</rdfs:label>
+        <rdfs:comment>Inverse of hasType; indicates which hopper this opening element type belongs to.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -234,10 +325,22 @@
     <!-- https://w3id.org/bimprev#isEquippedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isEquippedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#equips"/>
         <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
         <rdfs:label>isEquippedBy</rdfs:label>
         <rdfs:comment>Declares the IFC element that equips a hopper.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bimprev#equips -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#equips">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/bimprev#Hopper"/>
+        <rdfs:label>equips</rdfs:label>
+        <rdfs:comment>Inverse of isEquippedBy; indicates which hopper this element equips.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -256,10 +359,22 @@
     <!-- https://w3id.org/bimprev#requires -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#requires">
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isRequiredBy"/>
         <rdfs:domain rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
         <rdfs:label>requires</rdfs:label>
         <rdfs:comment>Specifies the IFC element needed by a process.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bimprev#isRequiredBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isRequiredBy">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
+        <rdfs:label>isRequiredBy</rdfs:label>
+        <rdfs:comment>Inverse of requires; indicates which process requires this element.</rdfs:comment>
     </owl:ObjectProperty>
     
 
