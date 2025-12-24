@@ -131,6 +131,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isVerticalHoleOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/bimprev#isHoleOf"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#hasVerticalHole"/>
         <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab"/>
         <rdfs:label>isVerticalHoleOf</rdfs:label>
