@@ -466,7 +466,7 @@
         <rdfs:label>IfcProcess</rdfs:label>
         <rdfs:comment>Represents a work process or activity in a construction or building lifecycle context.</rdfs:comment>
     </owl:Class>
-    
+     
 
 
     <!-- https://w3id.org/bimprev#SafetyMeasure -->
@@ -474,6 +474,26 @@
     <owl:Class rdf:about="https://w3id.org/bimprev#SafetyMeasure">
         <rdfs:label>SafetyMeasure</rdfs:label>
         <rdfs:comment>Represents preventive actions or equipment used to reduce risk and ensure safety during construction processes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject"/>
+        <rdfs:label>IfcActor</rdfs:label>
+        <rdfs:comment>Represents a person, organization, or other entity that performs activities in a building project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>IfcObject</rdfs:label>
+        <rdfs:comment>Base IFC class for objects that can have properties, relationships, and other attributes in the IFC model.</rdfs:comment>
     </owl:Class>
     
 
