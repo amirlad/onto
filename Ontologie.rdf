@@ -347,13 +347,18 @@
 
     <owl:Class rdf:about="https://w3id.org/bimprev#IfcProcess">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject"/>
+        <rdfs:label>IfcProcess</rdfs:label>
+        <rdfs:comment>Represents a work process or activity in a construction or building lifecycle context.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- https://w3id.org/bimprev#SafetyMeasure -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#SafetyMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/bimprev#SafetyMeasure">
+        <rdfs:label>SafetyMeasure</rdfs:label>
+        <rdfs:comment>Represents preventive actions or equipment used to reduce risk and ensure safety during construction processes.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -361,13 +366,18 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject"/>
+        <rdfs:label>IfcActor</rdfs:label>
+        <rdfs:comment>Represents a person, organization, or other entity that performs activities in a building project.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject"/>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject">
+        <rdfs:label>IfcObject</rdfs:label>
+        <rdfs:comment>Base IFC class for objects that can have properties, relationships, and other attributes in the IFC model.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -381,6 +391,8 @@
             <rdf:Description rdf:about="https://w3id.org/bimprev#BarringSlotOpening"/>
             <rdf:Description rdf:about="https://w3id.org/bimprev#BarringSquareOpening"/>
         </owl:disjointUnionOf>
+        <rdfs:label>Barring</rdfs:label>
+        <rdfs:comment>A protective barrier consisting of bars or grids covering an opening to prevent falls or unauthorized access.</rdfs:comment>
     </owl:Class>
     
 
@@ -396,6 +408,8 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>BarringCircularOpening</rdfs:label>
+        <rdfs:comment>Protective barring designed specifically for circular openings with maximum bar spacing of 24 units.</rdfs:comment>
     </owl:Class>
     
 
@@ -411,6 +425,8 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>BarringSlotOpening</rdfs:label>
+        <rdfs:comment>Protective barring for slot-shaped openings with maximum bar spacing of 18 units.</rdfs:comment>
     </owl:Class>
     
 
@@ -426,6 +442,8 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>BarringSquareOpening</rdfs:label>
+        <rdfs:comment>Protective barring for square or rectangular openings with maximum bar spacing of 24 units.</rdfs:comment>
     </owl:Class>
     
 
@@ -434,6 +452,8 @@
 
     <owl:Class rdf:about="https://w3id.org/bimprev#Hatch">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
+        <rdfs:label>Hatch</rdfs:label>
+        <rdfs:comment>A movable cover or door providing access to an opening in a floor, roof, or ceiling.</rdfs:comment>
     </owl:Class>
     
 
@@ -442,6 +462,8 @@
 
     <owl:Class rdf:about="https://w3id.org/bimprev#Hinge">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
+        <rdfs:label>Hinge</rdfs:label>
+        <rdfs:comment>A mechanical bearing connecting two parts to allow rotation, typically used on doors or hatches.</rdfs:comment>
     </owl:Class>
     
 
@@ -467,6 +489,8 @@
             <rdf:Description rdf:about="https://w3id.org/bimprev#HopperSquareHuman"/>
             <rdf:Description rdf:about="https://w3id.org/bimprev#HopperSquareObject"/>
         </owl:disjointUnionOf>
+        <rdfs:label>Hopper</rdfs:label>
+        <rdfs:comment>An opening in a floor or slab that may be equipped with protective equipment such as barring or railings.</rdfs:comment>
     </owl:Class>
     
 
@@ -475,6 +499,8 @@
 
     <owl:Class rdf:about="https://w3id.org/bimprev#HopperSquareHuman">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Hopper"/>
+        <rdfs:label>HopperSquareHuman</rdfs:label>
+        <rdfs:comment>A square or rectangular hopper opening designed for human passage or access.</rdfs:comment>
     </owl:Class>
     
 
@@ -483,6 +509,8 @@
 
     <owl:Class rdf:about="https://w3id.org/bimprev#HopperSquareObject">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Hopper"/>
+        <rdfs:label>HopperSquareObject</rdfs:label>
+        <rdfs:comment>A square or rectangular hopper opening designed for passing objects or materials.</rdfs:comment>
     </owl:Class>
     
 
@@ -491,6 +519,8 @@
 
     <owl:Class rdf:about="https://w3id.org/bimprev#ProtectiveEquipement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
+        <rdfs:label>ProtectiveEquipement</rdfs:label>
+        <rdfs:comment>Physical equipment or devices installed to protect workers from hazards during construction activities.</rdfs:comment>
     </owl:Class>
     
 
@@ -499,6 +529,8 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
+        <rdfs:label>IfcBuildingElement</rdfs:label>
+        <rdfs:comment>Represents components that make up the structure of a building, such as walls, slabs, columns, and beams.</rdfs:comment>
     </owl:Class>
     
 
@@ -507,13 +539,18 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcDiscreteAccessory">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
+        <rdfs:label>IfcDiscreteAccessory</rdfs:label>
+        <rdfs:comment>Represents accessory components or hardware elements that are discrete and do not belong to standard element types.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement">
+        <rdfs:label>IfcElement</rdfs:label>
+        <rdfs:comment>Base class for all physical building elements and components that form part of a building structure.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -521,13 +558,18 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcFurniture">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
+        <rdfs:label>IfcFurniture</rdfs:label>
+        <rdfs:comment>Represents movable furniture elements and fittings within a building space.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement">
+        <rdfs:label>IfcOpeningElement</rdfs:label>
+        <rdfs:comment>Represents voids or openings within building elements, such as doors, windows, or holes in slabs.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -543,6 +585,8 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>IfcRailing</rdfs:label>
+        <rdfs:comment>A protective barrier installed along edges of slabs, stairs, or roofs to prevent falls, with minimum height requirement of 120 units.</rdfs:comment>
     </owl:Class>
     
 
@@ -551,6 +595,8 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRoof">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
+        <rdfs:label>IfcRoof</rdfs:label>
+        <rdfs:comment>Represents the roof structure covering the top of a building.</rdfs:comment>
     </owl:Class>
     
 
@@ -559,6 +605,8 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
+        <rdfs:label>IfcSlab</rdfs:label>
+        <rdfs:comment>Represents horizontal structural elements such as floors, landings, or roof slabs in a building.</rdfs:comment>
     </owl:Class>
     
 
@@ -567,13 +615,18 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
+        <rdfs:label>IfcTask</rdfs:label>
+        <rdfs:comment>Represents a discrete work task or activity within a construction or building process workflow.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk"/>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk">
+        <rdfs:label>Risk</rdfs:label>
+        <rdfs:comment>Represents potential hazards or dangers associated with construction processes or building elements.</rdfs:comment>
+    </owl:Class>
 </rdf:RDF>
 
 
