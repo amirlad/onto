@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:nodeID="node4246">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<maxQualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">24</maxQualifiedCardinality>
+	<onDataRange xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node4247">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<maxQualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">18</maxQualifiedCardinality>
+	<onDataRange xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node4248">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<maxQualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">24</maxQualifiedCardinality>
+	<onDataRange xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node4249">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isEquipedBy"/>
+	<someValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:nodeID="node4250"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node4250">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<unionOf xmlns="http://www.w3.org/2002/07/owl#" rdf:nodeID="node4251"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node4251">
+	<rdf:first rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+	<rdf:rest rdf:nodeID="node4252"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node4252">
+	<rdf:first rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRailing"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node4253">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<minQualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">80</minQualifiedCardinality>
+	<onDataRange xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasLength"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node4254">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<minQualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">80</minQualifiedCardinality>
+	<onDataRange xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasWidth"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node4255">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<minQualifiedCardinality xmlns="http://www.w3.org/2002/07/owl#" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">120</minQualifiedCardinality>
+	<onDataRange xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHeight"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Activity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Cleaning">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Close">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Task"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Collision">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Risk"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Evacuation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Fall">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Risk"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#IfcPerson">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Maintenance">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#MaterialHandling">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Move">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Task"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Open">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Task"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Reduce">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SafetyMeasure"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Risk"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Risk">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#SafetyMeasure">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Task">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#WorkSituation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#accomplish">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcPerson"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Activity"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Task"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WorkSituation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasActivity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WorkSituation"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasTask">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Activity"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Task"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#isLocatedIn">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Activity"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcBuildingElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#isPresenting">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Activity"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Task"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Risk"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#need">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Task"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SafetyMeasure"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barreaudage2">
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcEquipmentElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringCircularOpening">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node4246"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringSlotOpening">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node4247"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringSquareOpening">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node4248"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Gardecorps1">
+	<RelatingStructure xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Toiture1"/>
+	<hasHeight xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasHeight>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRailing"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Gardecorps2">
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRailing"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Gardecorps3">
+	<hasHeight xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</hasHeight>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRailing"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hinge">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcEquipmentElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node4249"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcOpeningElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperCircular">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquare">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node4253"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node4254"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquareHuman">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquare"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquareObject">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquare"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcBuildingElement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcDiscreteAccessory">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcEquipmentElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcEquipmentElement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcFurniture">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcEquipmentElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcHatch">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcEquipmentElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcOpeningElement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRailing">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node4255"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcEquipmentElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRoof">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcBuildingElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcSlab">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcBuildingElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IsHorizontalHoleOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcSlab"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf"/>
+	<inverseOf xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHorizontalHole"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IsVerticalHoleOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/RelatedElements">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRoof"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRailing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/RelatingStructure">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRailing"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRoof"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Toiture1">
+	<RelatedElements xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Gardecorps1"/>
+	<RelatedElements xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Gardecorps2"/>
+	<RelatedElements xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Gardecorps3"/>
+	<RelatedElements xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie1"/>
+	<RelatedElements xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie2"/>
+	<RelatedElements xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie3"/>
+	<RelatedElements xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie4"/>
+	<RelatedElements xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie5"/>
+	<RelatedElements xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie6"/>
+	<RelatedElements xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie7"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRoof"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/barreaudage1">
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasDiameter">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperCircular"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasDimension">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHeight">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcRailing"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasDimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcBuildingElement"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcOpeningElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHorizontalHole">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcSlab"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasLength">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquare"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcOpeningElement"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasDimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasVerticalHole">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcSlab"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasWidth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquare"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcOpeningElement"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasDimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isEquipedBy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcEquipmentElement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcOpeningElement"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IfcBuildingElement"/>
+	<inverseOf xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie1">
+	<RelatingStructure xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Toiture1"/>
+	<isEquipedBy xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Gardecorps1"/>
+	<isEquipedBy xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/barreaudage1"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie2">
+	<hasLength xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.0</hasLength>
+	<hasWidth xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.0</hasWidth>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquare"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie3">
+	<hasLength xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</hasLength>
+	<hasWidth xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</hasWidth>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquare"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie4">
+	<RelatingStructure xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Toiture1"/>
+	<hasLength xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90.0</hasLength>
+	<hasWidth xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.0</hasWidth>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquare"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie5">
+	<isEquipedBy xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barreaudage2"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie6">
+	<isEquipedBy xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/" rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Gardecorps3"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/tremie7">
+	<rdf:type rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+</rdf:RDF>
