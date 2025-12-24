@@ -488,16 +488,6 @@
     
 
 
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label>IfcObject</rdfs:label>
-        <rdfs:comment>Base IFC class for objects that can have properties, relationships, and other attributes in the IFC model.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/bimprev#Barring -->
 
     <owl:Class rdf:about="https://w3id.org/bimprev#Barring">
