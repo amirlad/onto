@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/bimprev#"
-    xml:base="https://w3id.org/bimprev"
+<rdf:RDF xmlns="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/"
+     xml:base="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/"
      xmlns:ifc="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://w3id.org/bimprev"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21"/>
     
 
 
@@ -22,359 +22,178 @@
     
 
 
-    <!-- https://w3id.org/bimprev#reduce -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Reduce -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#reduce">
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isReducedBy"/>
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#Reduce">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SafetyMeasure"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk"/>
-        <rdfs:label>reduce</rdfs:label>
-        <rdfs:comment>Safety measure that reduces a specific risk.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#isReducedBy -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#accomplish -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isReducedBy">
-        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk"/>
-        <rdfs:range rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
-        <rdfs:label>isReducedBy</rdfs:label>
-        <rdfs:comment>Inverse of reduce; indicates which safety measure reduces this risk.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/bimprev#accomplish -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#accomplish">
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isAccomplishedBy"/>
-        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/bimprev#IfcProcess"/>
-                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label>accomplish</rdfs:label>
-        <rdfs:comment>Links an actor or task to the process it accomplishes.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/bimprev#hasActivity -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasActivity">
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isActivityOf"/>
-        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor"/>
-        <rdfs:range rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
-        <rdfs:label>hasActivity</rdfs:label>
-        <rdfs:comment>Associates an entity with an IFC process activity.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/bimprev#isActivityOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isActivityOf">
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
-        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor"/>
-        <rdfs:label>isActivityOf</rdfs:label>
-        <rdfs:comment>Inverse of hasActivity; indicates which actor performs this process.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/bimprev#hasTask -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasTask">
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isTaskOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#accomplish">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isAccomplishedBy"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
-        <rdfs:label>hasTask</rdfs:label>
-        <rdfs:comment>Indicates a task that belongs to or is required by a process.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#isTaskOf -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasActivity -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isTaskOf">
-        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
-        <rdfs:range rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
-        <rdfs:label>isTaskOf</rdfs:label>
-        <rdfs:comment>Inverse of hasTask; indicates which process this task belongs to.</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasActivity">
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#isLocatedIn -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasTask -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isLocatedIn">
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#hosts"/>
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasTask">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isLocatedIn">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <rdfs:label>isLocatedIn</rdfs:label>
-        <rdfs:comment>States the hosting building element for a process.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#hosts -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isPresenting -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hosts">
-        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
-        <rdfs:label>hosts</rdfs:label>
-        <rdfs:comment>Inverse of isLocatedIn; indicates which process is hosted by this building element.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/bimprev#isPresenting -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isPresenting">
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isPresentedBy"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/bimprev#IfcProcess"/>
-                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk"/>
-        <rdfs:label>isPresenting</rdfs:label>
-        <rdfs:comment>Indicates that a process or task presents a given risk.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/bimprev#isPresentedBy -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isPresentedBy">
-        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/bimprev#IfcProcess"/>
-                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label>isPresentedBy</rdfs:label>
-        <rdfs:comment>Inverse of isPresenting; indicates which process or task presents this risk.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/bimprev#need -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#need">
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isNeededBy"/>
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isPresenting">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
-        <rdfs:range rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
-        <rdfs:label>need</rdfs:label>
-        <rdfs:comment>Declares that a task requires a safety measure.</rdfs:comment>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#isNeededBy -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#need -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isNeededBy">
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
-        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
-        <rdfs:label>isNeededBy</rdfs:label>
-        <rdfs:comment>Inverse of need; indicates which task requires this safety measure.</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#need">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SafetyMeasure"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#isHorizontalHoleOf -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IsHorizontalHoleOf -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isHorizontalHoleOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bimprev#isHoleOf"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#hasHorizontalHole"/>
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IsHorizontalHoleOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHorizontalHole"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab"/>
-        <rdfs:label>isHorizontalHoleOf</rdfs:label>
-        <rdfs:comment>Relates a hopper that forms a horizontal hole within a slab.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#isVerticalHoleOf -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IsVerticalHoleOf -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isVerticalHoleOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bimprev#isHoleOf"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#hasVerticalHole"/>
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
-        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab"/>
-        <rdfs:label>isVerticalHoleOf</rdfs:label>
-        <rdfs:comment>Relates a hopper that forms a vertical hole within a parent element.</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/IsVerticalHoleOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#relatedElements -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/RelatedElements -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#relatedElements">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/RelatedElements">
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRoof"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing"/>
-        <rdfs:label>relatedElements</rdfs:label>
-        <rdfs:comment>Links a roof to a railing element related to it.</rdfs:comment>
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#relatingStructure"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#relatingStructure -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/RelatingStructure -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#relatingStructure">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/RelatingStructure">
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRoof"/>
-        <rdfs:label>relatingStructure</rdfs:label>
-        <rdfs:comment>Associates a railing with the roof structure it relates to.</rdfs:comment>
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#relatedElements"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#hasHole -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasHole">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole">
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isHoleOf"/>
-        <rdfs:label>hasHole</rdfs:label>
-        <rdfs:comment>States that a building element contains an opening element.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#hasHorizontalHole -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHorizontalHole -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasHorizontalHole">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bimprev#hasHole"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHorizontalHole">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab"/>
-        <rdfs:range rdf:resource="https://w3id.org/bimprev#Hopper"/>
-        <rdfs:label>hasHorizontalHole</rdfs:label>
-        <rdfs:comment>Indicates that a slab includes a horizontal hopper opening.</rdfs:comment>
-        <owl:propertyDisjointWith rdf:resource="https://w3id.org/bimprev#hasVerticalHole"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#hasType -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasType -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasType">
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isTypeOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
-        <rdfs:label>hasType</rdfs:label>
-        <rdfs:comment>Assigns an IFC opening element type to a hopper.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#isTypeOf -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasVerticalHole -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isTypeOf">
-        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/bimprev#Hopper"/>
-        <rdfs:label>isTypeOf</rdfs:label>
-        <rdfs:comment>Inverse of hasType; indicates which hopper this opening element type belongs to.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/bimprev#hasVerticalHole -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#hasVerticalHole">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bimprev#hasHole"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasVerticalHole">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHole"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab"/>
-        <rdfs:range rdf:resource="https://w3id.org/bimprev#Hopper"/>
-        <rdfs:label>hasVerticalHole</rdfs:label>
-        <rdfs:comment>Indicates that a slab includes a vertical hopper opening.</rdfs:comment>
-        <owl:propertyDisjointWith rdf:resource="https://w3id.org/bimprev#hasHorizontalHole"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#isAccomplishedBy -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isAccomplishedBy -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isAccomplishedBy">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/bimprev#IfcProcess"/>
-                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor"/>
-        <rdfs:label>isAccomplishedBy</rdfs:label>
-        <rdfs:comment>Inverse relation showing which task or process accomplishes a target.</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isAccomplishedBy">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#isEquippedBy -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isEquipedBy -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isEquippedBy">
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#equips"/>
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isEquipedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
-        <rdfs:label>isEquippedBy</rdfs:label>
-        <rdfs:comment>Declares the IFC element that equips a hopper.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#equips -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#equips">
-        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/bimprev#Hopper"/>
-        <rdfs:label>equips</rdfs:label>
-        <rdfs:comment>Inverse of isEquippedBy; indicates which hopper this element equips.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/bimprev#isHoleOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isHoleOf">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isHoleOf"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <rdfs:label>isHoleOf</rdfs:label>
-        <rdfs:comment>Inverse relation indicating the host building element of an opening.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#requires -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/requires -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#requires">
-        <owl:inverseOf rdf:resource="https://w3id.org/bimprev#isRequiredBy"/>
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/requires">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
-        <rdfs:label>requires</rdfs:label>
-        <rdfs:comment>Specifies the IFC element needed by a process.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/bimprev#isRequiredBy -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/bimprev#isRequiredBy">
-        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
-        <rdfs:label>isRequiredBy</rdfs:label>
-        <rdfs:comment>Inverse of requires; indicates which process requires this element.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -390,60 +209,49 @@
     
 
 
-    <!-- https://w3id.org/bimprev#hasDiameter -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasDiameter -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/bimprev#hasDiameter">
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#Hopper"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasDiameter">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>hasDiameter</rdfs:label>
-        <rdfs:comment>Stores a diameter measurement.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#hasHeight -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHeight -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/bimprev#hasHeight">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHeight">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label>hasHeight</rdfs:label>
-        <rdfs:comment>Stores a height value, typically for railings.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#hasLength -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasLength -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/bimprev#hasLength">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasLength">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label>hasLength</rdfs:label>
-        <rdfs:comment>Stores a length measurement for an opening element.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#hasSpacement -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/bimprev#hasSpacement">
-        <rdfs:domain rdf:resource="https://w3id.org/bimprev#Barring"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label>hasSpacement</rdfs:label>
-        <rdfs:comment>Stores spacing between bars in a barring element.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/bimprev#hasWidth -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasWidth -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/bimprev#hasWidth">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasWidth">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label>hasWidth</rdfs:label>
-        <rdfs:comment>Stores a width measurement for an opening element.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -459,185 +267,145 @@
     
 
 
-    <!-- https://w3id.org/bimprev#IfcProcess -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#IfcProcess -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#IfcProcess">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject"/>
-        <rdfs:label>IfcProcess</rdfs:label>
-        <rdfs:comment>Represents a work process or activity in a construction or building lifecycle context.</rdfs:comment>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IfcProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcObject"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bimprev#SafetyMeasure -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SafetyMeasure -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#SafetyMeasure">
-        <rdfs:label>SafetyMeasure</rdfs:label>
-        <rdfs:comment>Represents preventive actions or equipment used to reduce risk and ensure safety during construction processes.</rdfs:comment>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SafetyMeasure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcActor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcActor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcObject"/>
     </owl:Class>
     
 
 
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcObject -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcActor">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject"/>
-        <rdfs:label>IfcActor</rdfs:label>
-        <rdfs:comment>Represents a person, organization, or other entity that performs activities in a building project.</rdfs:comment>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21#IfcObject"/>
     
 
 
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/FINAL/OWL#IfcObject">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label>IfcObject</rdfs:label>
-        <rdfs:comment>Base IFC class for objects that can have properties, relationships, and other attributes in the IFC model.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bimprev#Barring -->
-
-    <owl:Class rdf:about="https://w3id.org/bimprev#Barring">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#ProtectiveEquipement"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/ProtectiveEquipement"/>
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/bimprev#BarringCircularOpening"/>
-            <rdf:Description rdf:about="https://w3id.org/bimprev#BarringSlotOpening"/>
-            <rdf:Description rdf:about="https://w3id.org/bimprev#BarringSquareOpening"/>
-        </owl:disjointUnionOf>
-        <rdfs:label>Barring</rdfs:label>
-        <rdfs:comment>A protective barrier consisting of bars or grids covering an opening to prevent falls or unauthorized access.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bimprev#BarringCircularOpening -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringCircularOpening -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#BarringCircularOpening">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Barring"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringCircularOpening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/bimprev#hasSpacement"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">24</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>BarringCircularOpening</rdfs:label>
-        <rdfs:comment>Protective barring designed specifically for circular openings with maximum bar spacing of 24 units.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bimprev#BarringSlotOpening -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringSlotOpening -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#BarringSlotOpening">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Barring"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringSlotOpening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/bimprev#hasSpacement"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">18</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>BarringSlotOpening</rdfs:label>
-        <rdfs:comment>Protective barring for slot-shaped openings with maximum bar spacing of 18 units.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bimprev#BarringSquareOpening -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringSquareOpening -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#BarringSquareOpening">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Barring"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/BarringSquareOpening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/bimprev#hasSpacement"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasSpacement"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">24</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>BarringSquareOpening</rdfs:label>
-        <rdfs:comment>Protective barring for square or rectangular openings with maximum bar spacing of 24 units.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bimprev#Hatch -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hatch -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#Hatch">
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hatch">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <rdfs:label>Hatch</rdfs:label>
-        <rdfs:comment>A movable cover or door providing access to an opening in a floor, roof, or ceiling.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bimprev#Hinge -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hinge -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#Hinge">
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hinge">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <rdfs:label>Hinge</rdfs:label>
-        <rdfs:comment>A mechanical bearing connecting two parts to allow rotation, typically used on doors or hatches.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bimprev#Hopper -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#Hopper">
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/bimprev#isEquippedBy"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/isEquipedBy"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/bimprev#Barring"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Barring"/>
                             <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/bimprev#HopperSquareHuman"/>
-            <rdf:Description rdf:about="https://w3id.org/bimprev#HopperSquareObject"/>
-        </owl:disjointUnionOf>
-        <rdfs:label>Hopper</rdfs:label>
-        <rdfs:comment>An opening in a floor or slab that may be equipped with protective equipment such as barring or railings.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bimprev#HopperSquareHuman -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquareHuman -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#HopperSquareHuman">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Hopper"/>
-        <rdfs:label>HopperSquareHuman</rdfs:label>
-        <rdfs:comment>A square or rectangular hopper opening designed for human passage or access.</rdfs:comment>
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquareHuman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bimprev#HopperSquareObject -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquareObject -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#HopperSquareObject">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#Hopper"/>
-        <rdfs:label>HopperSquareObject</rdfs:label>
-        <rdfs:comment>A square or rectangular hopper opening designed for passing objects or materials.</rdfs:comment>
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/HopperSquareObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/Hopper"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bimprev#ProtectiveEquipement -->
+    <!-- http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/ProtectiveEquipement -->
 
-    <owl:Class rdf:about="https://w3id.org/bimprev#ProtectiveEquipement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#SafetyMeasure"/>
-        <rdfs:label>ProtectiveEquipement</rdfs:label>
-        <rdfs:comment>Physical equipment or devices installed to protect workers from hazards during construction activities.</rdfs:comment>
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/ProtectiveEquipement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SafetyMeasure"/>
     </owl:Class>
     
 
@@ -646,8 +414,6 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
-        <rdfs:label>IfcBuildingElement</rdfs:label>
-        <rdfs:comment>Represents components that make up the structure of a building, such as walls, slabs, columns, and beams.</rdfs:comment>
     </owl:Class>
     
 
@@ -656,18 +422,13 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcDiscreteAccessory">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
-        <rdfs:label>IfcDiscreteAccessory</rdfs:label>
-        <rdfs:comment>Represents accessory components or hardware elements that are discrete and do not belong to standard element types.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement">
-        <rdfs:label>IfcElement</rdfs:label>
-        <rdfs:comment>Base class for all physical building elements and components that form part of a building structure.</rdfs:comment>
-    </owl:Class>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
     
 
 
@@ -675,35 +436,28 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcFurniture">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcElement"/>
-        <rdfs:label>IfcFurniture</rdfs:label>
-        <rdfs:comment>Represents movable furniture elements and fittings within a building space.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement">
-        <rdfs:label>IfcOpeningElement</rdfs:label>
-        <rdfs:comment>Represents voids or openings within building elements, such as doors, windows, or holes in slabs.</rdfs:comment>
-    </owl:Class>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcOpeningElement"/>
     
 
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing -->
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRailing">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#ProtectiveEquipement"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/ProtectiveEquipement"/>
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/bimprev#hasHeight"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel.moalla/ontologies/2024/1/untitled-ontology-21/hasHeight"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">120</owl:minQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>IfcRailing</rdfs:label>
-        <rdfs:comment>A protective barrier installed along edges of slabs, stairs, or roofs to prevent falls, with minimum height requirement of 120 units.</rdfs:comment>
     </owl:Class>
     
 
@@ -712,8 +466,6 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcRoof">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <rdfs:label>IfcRoof</rdfs:label>
-        <rdfs:comment>Represents the roof structure covering the top of a building.</rdfs:comment>
     </owl:Class>
     
 
@@ -722,8 +474,6 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcSlab">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcBuildingElement"/>
-        <rdfs:label>IfcSlab</rdfs:label>
-        <rdfs:comment>Represents horizontal structural elements such as floors, landings, or roof slabs in a building.</rdfs:comment>
     </owl:Class>
     
 
@@ -731,21 +481,17 @@
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask -->
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#IfcTask">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bimprev#IfcProcess"/>
-        <rdfs:label>IfcTask</rdfs:label>
-        <rdfs:comment>Represents a discrete work task or activity within a construction or building process workflow.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IfcProcess"/>
     </owl:Class>
     
 
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk">
-        <rdfs:label>Risk</rdfs:label>
-        <rdfs:comment>Represents potential hazards or dangers associated with construction processes or building elements.</rdfs:comment>
-    </owl:Class>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#Risk"/>
 </rdf:RDF>
 
 
 
 <!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
